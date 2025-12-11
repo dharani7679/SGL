@@ -4,48 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company Profile</title>
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
             background: url('images/profile.jpg') no-repeat center center/cover;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            padding: 20px; /* Prevents content touching edges on mobile */
         }
+
         .container {
+            width: 100%;
             max-width: 600px;
-            background: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.85);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
             text-align: center;
+            animation: fadeSlide 1.2s ease;
         }
+
+        @keyframes fadeSlide {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
         h2 {
-            text-align: center;
             font-size: 24px;
             font-weight: bold;
-            color: #333;
             text-transform: uppercase;
-            animation: fadeIn 2s ease-in-out infinite alternate;
+            margin-bottom: 20px;
+            animation: colorFade 2s ease-in-out infinite alternate;
         }
-        @keyframes fadeIn {
+
+        @keyframes colorFade {
             from { color: #ff0000; }
             to { color: #0000ff; }
         }
+
         .profile-item {
             margin-bottom: 15px;
             font-size: 18px;
+            text-align: left;
         }
+
         .label {
             font-weight: bold;
         }
+
+        /* ----------- RESPONSIVE DESIGN ---------- */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            .profile-item {
+                font-size: 16px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .profile-item {
+                font-size: 15px;
+            }
+        }
     </style>
 </head>
+
 <body>
+
     <div class="container">
+
+        <h2>Company Profile</h2>
+
         <div class="profile-item"><span class="label">Company Name:</span> SRI GANESH LAKSHMI CONSTRUCTION</div>
         <div class="profile-item"><span class="label">GST:</span> 33AANC56748PIZG</div>
         <div class="profile-item"><span class="label">Company Established:</span> 2009</div>
@@ -58,6 +102,8 @@
         <div class="profile-item"><span class="label">Nature of Business:</span> CONSTRUCTION</div>
         <div class="profile-item"><span class="label">Mode of Building:</span> COMPUTERIZED</div>
         <div class="profile-item"><span class="label">Mode of Payment:</span> CASH AND CHEQUE</div>
+
     </div>
+
 </body>
 </html>
