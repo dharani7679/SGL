@@ -26,18 +26,17 @@
             justify-content: space-between;
             align-items: center;
             background: rgba(255, 255, 255, 0.95);
-            padding: 15px 30px;         /* Increased to maintain height */
+            padding: 15px 30px;
             position: fixed;
             width: 100%;
             top: 0;
             left: 0;
-            height: 75px;               /* FIXED HEIGHT for consistency */
+            height: 75px;
             box-shadow: 0 3px 10px rgba(0,0,0,0.15);
             z-index: 1000;
             box-sizing: border-box;
         }
 
-        /* Logo area */
         .logo-section {
             display: flex;
             align-items: center;
@@ -58,7 +57,6 @@
             margin: 0;
         }
 
-        /* Navbar links */
         .nav-links {
             display: flex;
             gap: 20px;
@@ -81,9 +79,9 @@
             color: white;
         }
 
-        /* MAIN CONTENT CARDS */
+        /* CONTENT CARDS */
         .content, .vision-mission {
-            margin: 140px auto 0 auto;   /* FINAL FIX – moves content fully below navbar */
+            margin: 140px auto 0 auto;
             max-width: 950px;
             background: rgba(255, 255, 255, 0.90);
             padding: 40px;
@@ -93,7 +91,7 @@
         }
 
         .vision-mission {
-            margin-top: 40px;  /* extra spacing for second card */
+            margin-top: 40px;
         }
 
         @keyframes fadeIn {
@@ -101,7 +99,7 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        .content p, 
+        .content p,
         .vision-mission p {
             font-size: 18px;
             line-height: 1.7;
@@ -117,12 +115,81 @@
             display: inline-block;
             margin-bottom: 10px;
         }
+
+        /* ------- RESPONSIVE FIXES ------- */
+        @media (max-width: 900px) {
+            .navbar {
+                padding: 15px 20px;
+            }
+
+            .nav-links {
+                gap: 10px;
+            }
+
+            .nav-links a {
+                padding: 8px 14px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .navbar {
+                flex-direction: column;
+                height: auto;
+                padding: 10px 0;
+            }
+
+            .logo-section h1 {
+                font-size: 18px;
+                text-align: center;
+            }
+
+            .nav-links {
+                margin-top: 10px;
+            }
+
+            .content,
+            .vision-mission {
+                margin-top: 160px;
+                width: 90%;
+                padding: 25px;
+            }
+
+            .content p,
+            .vision-mission p {
+                font-size: 16px;
+            }
+
+            .vision-mission h2 {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .logo-section img {
+                height: 38px;
+                width: 38px;
+            }
+
+            .logo-section h1 {
+                font-size: 16px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .nav-links a {
+                width: 100%;
+                justify-content: center;
+            }
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
     <div class="navbar">
         <div class="logo-section">
             <img src="images/logo.jpg" alt="Logo">
@@ -136,29 +203,18 @@
         </div>
     </div>
 
-    <!-- MAIN CONTENT -->
     <div class="content">
-        <p>
-            Welcome to <b>SRI GANESH LAKSHMI CONSTRUCTION INDIA(P) LTD</b>, your trusted construction company.
-        </p>
-        <p>
-            We provide high-quality construction solutions for government and private sectors all over Tamil Nadu.
-        </p>
-        <p>
-            At <b>SRI GANESH LAKSHMI CONSTRUCTION INDIA(P) LTD</b>, we build your dreams with trust.
-        </p>
+        <p>Welcome to <b>SRI GANESH LAKSHMI CONSTRUCTION INDIA(P) LTD</b>, your trusted construction company.</p>
+        <p>We provide high-quality construction solutions for government and private sectors all over Tamil Nadu.</p>
+        <p>At <b>SRI GANESH LAKSHMI CONSTRUCTION INDIA(P) LTD</b>, we build your dreams with trust.</p>
     </div>
 
     <div class="vision-mission">
         <h2>Our Vision</h2>
-        <p>
-            To be a leading and innovative construction company setting benchmarks in quality and trust.
-        </p>
+        <p>To be a leading and innovative construction company setting benchmarks in quality and trust.</p>
 
         <h2>Our Mission</h2>
-        <p>
-            Providing top-notch construction solutions with timely delivery and cost-effective execution.
-        </p>
+        <p>Providing top-notch construction solutions with timely delivery and cost-effective execution.</p>
     </div>
 
 </body>
