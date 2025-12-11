@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finished Road Construction Project</title>
+
     <style>
         * {
             margin: 0;
@@ -18,14 +19,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             padding: 20px;
         }
 
         .container {
             display: flex;
             flex-direction: row;
-            align-items: center; /* Center items vertically */
+            align-items: center;
             gap: 30px;
             background-color: #fff;
             padding: 20px;
@@ -69,7 +70,7 @@
             overflow: hidden;
             display: flex;
             justify-content: center;
-            align-items: center; /* Ensure image is centered */
+            align-items: center;
         }
 
         .image-container img {
@@ -93,39 +94,81 @@
         .button:hover {
             background-color: #45a049;
         }
+
+        /* 📱 Mobile & Tablet Responsive */
+        @media (max-width: 992px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .content {
+                padding: 10px;
+            }
+
+            .image-container {
+                width: 100%;
+                max-width: 500px;
+                height: auto;
+            }
+
+            .image-container img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .content h1 {
+                font-size: 1.5rem;
+            }
+
+            .content p, 
+            .content ul li {
+                font-size: 0.95rem;
+            }
+
+            .button {
+                font-size: 0.9rem;
+                padding: 8px 15px;
+            }
+        }
     </style>
 </head>
 <body>
+
     <div class="container">
         <!-- Content Section -->
         <div class="content">
             <h1>Finished Road Construction Project</h1>
-            <p>We are excited to announce the successful completion of the road construction project. The newly completed road offers significant improvements to traffic flow, safety, and accessibility. Below are the key details of the finished project:</p>
-            
+            <p>We are excited to announce the successful completion of the road construction project...</p>
+
             <ul>
                 <li><strong>Location:</strong> Downtown City Area, Main Street</li>
                 <li><strong>Completion Date:</strong> December 2024</li>
-                <li><strong>Project Scope:</strong> Road widening, new asphalt layers, pedestrian walkways, installation of traffic signals, and improved drainage system.</li>
-                <li><strong>Key Features:</strong> Enhanced lighting, better road markings, and eco-friendly landscaping.</li>
+                <li><strong>Project Scope:</strong> Road widening, new asphalt layers...</li>
+                <li><strong>Key Features:</strong> Enhanced lighting, better road markings...</li>
             </ul>
 
             <h2>Additional Information:</h2>
-            <p>The successful completion of the road construction project brings various benefits to the community, including:</p>
+            <p>The successful completion of the road construction project brings various benefits...</p>
+
             <ul>
-                <li><strong>Reduced Traffic Congestion:</strong> With the expansion of the road, traffic flow has significantly improved, reducing congestion during peak hours.</li>
-                <li><strong>Increased Safety:</strong> New traffic signals and pedestrian-friendly crossings make the road safer for both drivers and pedestrians.</li>
-                <li><strong>Environmental Benefits:</strong> The landscaping added to the roadside includes green zones that contribute to better air quality and aesthetics.</li>
+                <li><strong>Reduced Traffic Congestion:</strong> Road expansion improved flow...</li>
+                <li><strong>Increased Safety:</strong> New signals & crossings...</li>
+                <li><strong>Environmental Benefits:</strong> Added green zones...</li>
             </ul>
 
             <h2>Feedback from the Community:</h2>
-            <p>Since the completion of the project, we have received positive feedback from local residents and commuters. Here are some highlights:</p>
+            <p>We have received positive feedback...</p>
+
             <ul>
-                <li>“The new road is much smoother, and traffic flows so much better now!” – Commuter</li>
-                <li>“I appreciate the new pedestrian walkways. It feels safer to walk around here now.” – Local Resident</li>
-                <li>“The green zones along the road add a nice touch to the area. It's great to see environmental considerations.” – Community Member</li>
+                <li>“The new road is much smoother…” – Commuter</li>
+                <li>“Walkways feel safer now…” – Resident</li>
+                <li>“Green zones improve the look…” – Community Member</li>
             </ul>
 
-            <p>We are proud to have completed this project and are confident that it will benefit the community for many years to come. Thank you for your patience and support throughout the construction process!</p>
+            <p>We are proud to have completed this project...</p>
 
             <a href="profile.html" class="button">Contact for More Info</a>
         </div>
@@ -135,5 +178,6 @@
             <img src="images/finish.jpg" alt="Finished Road Construction">
         </div>
     </div>
+
 </body>
 </html>
