@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-Sand Details</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://source.unsplash.com/1600x900/?construction,plaster');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 40px 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.55);
+            backdrop-filter: blur(8px);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            animation: slideUp 1.5s ease;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.3rem;
+            letter-spacing: 2px;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+            margin-bottom: 25px;
+        }
+
+        .image-box {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .image-box img {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+            animation: zoomIn 1.3s ease;
+        }
+
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .content {
+            margin-top: 20px;
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+
+        .content h2 {
+            margin-top: 25px;
+            font-size: 1.6rem;
+        }
+
+        .content ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .contact-btn {
+            display: block;
+            width: 200px;
+            margin: 40px auto 10px auto;
+            padding: 12px 0;
+            background: linear-gradient(135deg, #ffa726, #fb8c00);
+            color: white;
+            text-align: center;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>P-Sand (Plastering Sand)</h1>
+
+        <div class="image-box">
+            <img src="images/psand.jpg" alt="P-Sand Image">
+        </div>
+
+        <div class="content">
+            <p>
+                P-Sand (Plastering Sand) is a fine-grade manufactured sand specifically designed for 
+                plastering applications. Known for its smooth texture and consistent grain size, P-Sand 
+                provides an excellent finish and strong bonding for interior and exterior wall plastering.
+            </p>
+
+            <h2>✔ Features of High-Quality P-Sand</h2>
+            <ul>
+                <li>Very fine and smooth particles</li>
+                <li>Ideal for wall and ceiling plastering</li>
+                <li>Zero organic impurities</li>
+                <li>Ensures crack-free and even finishing</li>
+                <li>Better water retention and workability</li>
+            </ul>
+
+            <h2>✔ Applications</h2>
+            <ul>
+                <li>Exterior wall plastering</li>
+                <li>Interior smooth plastering</li>
+                <li>Ceiling plaster work</li>
+                <li>Tile laying base preparation</li>
+                <li>Finishing coats and skim coats</li>
+            </ul>
+
+            <h2>✔ Why Choose P-Sand?</h2>
+            <p>
+                P-Sand offers maximum smoothness, better binding, and a superior surface finish compared 
+                to river sand. Manufactured with precise grading, it prevents cracks, improves durability, 
+                and ensures a premium plastering quality for all construction projects.
+            </p>
+        </div>
+
+        <a href="profile.html" class="contact-btn">Contact</a>
+    </div>
+
+</body>
+</html>

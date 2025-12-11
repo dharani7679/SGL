@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-Sand Details</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://source.unsplash.com/1600x900/?construction,sand');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 40px 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.55);
+            backdrop-filter: blur(8px);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            animation: slideUp 1.5s ease;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.3rem;
+            letter-spacing: 2px;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+            margin-bottom: 25px;
+        }
+
+        .image-box {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .image-box img {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+            animation: zoomIn 1.3s ease;
+        }
+
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .content {
+            margin-top: 20px;
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+
+        .content h2 {
+            margin-top: 25px;
+            font-size: 1.6rem;
+        }
+
+        .content ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .contact-btn {
+            display: block;
+            width: 200px;
+            margin: 40px auto 10px auto;
+            padding: 12px 0;
+            background: linear-gradient(135deg, #ff9800, #e65100);
+            color: white;
+            text-align: center;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>M-Sand (Manufactured Sand)</h1>
+
+        <div class="image-box">
+            <img src="images/msand.jpg" alt="M-Sand Image">
+        </div>
+
+        <div class="content">
+            <p>
+                M-Sand (Manufactured Sand) is a superior alternative to river sand, produced by crushing 
+                hard granite stones. With growing environmental concerns and restrictions on river sand 
+                mining, M-Sand has become the preferred choice in modern construction.
+            </p>
+
+            <h2>✔ Features of High-Quality M-Sand</h2>
+            <ul>
+                <li>Precisely graded for consistent quality</li>
+                <li>Free from organic impurities</li>
+                <li>Increased durability and strength</li>
+                <li>Improved workability for concrete and mortar</li>
+                <li>Environment-friendly and sustainable</li>
+            </ul>
+
+            <h2>✔ Applications</h2>
+            <ul>
+                <li>Concrete production (all grades)</li>
+                <li>Brick and block manufacturing</li>
+                <li>Road construction</li>
+                <li>Ready Mix Concrete (RMC)</li>
+                <li>Large-scale civil infrastructure projects</li>
+            </ul>
+
+            <h2>✔ Why Choose M-Sand Over River Sand?</h2>
+            <p>
+                M-Sand ensures quality, reduces waste, and increases strength in construction. It is 
+                free from silt, clay, and organic matter that weakens concrete structures. The consistent 
+                texture and controlled manufacturing make it an ideal replacement for river sand.
+            </p>
+        </div>
+
+        <a href="profile.html" class="contact-btn">Contact</a>
+    </div>
+
+</body>
+</html>
