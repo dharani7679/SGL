@@ -18,14 +18,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             padding: 20px;
         }
 
         .container {
             display: flex;
             flex-direction: row;
-            align-items: center; /* Center items vertically */
+            align-items: center;
             gap: 30px;
             background-color: #fff;
             padding: 20px;
@@ -45,10 +45,16 @@
             margin-bottom: 15px;
         }
 
+        .content h2 {
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-size: 1.3rem;
+        }
+
         .content p {
             font-size: 1rem;
             line-height: 1.6;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .content ul {
@@ -63,13 +69,14 @@
         }
 
         .image-container {
-            width: 300px;
-            height: 200px;
+            width: 350px;
+            height: 250px;
             border-radius: 10px;
             overflow: hidden;
             display: flex;
             justify-content: center;
-            align-items: center; /* Ensures the image is centered */
+            align-items: center;
+            flex-shrink: 0;
         }
 
         .image-container img {
@@ -92,6 +99,57 @@
 
         .button:hover {
             background-color: #45a049;
+        }
+
+        /* MOBILE RESPONSIVE STYLING */
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .image-container {
+                width: 100%;
+                height: auto;
+            }
+
+            .image-container img {
+                width: 100%;
+                height: auto;
+            }
+
+            .content {
+                padding: 10px;
+            }
+
+            .content h1 {
+                font-size: 1.7rem;
+            }
+
+            .content p,
+            .content ul li {
+                font-size: 0.95rem;
+            }
+
+            .button {
+                margin: 20px auto 0 auto;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .content h1 {
+                font-size: 1.5rem;
+            }
+
+            .content h2 {
+                font-size: 1.1rem;
+            }
+
+            .button {
+                width: 180px;
+                font-size: 0.95rem;
+                padding: 8px 0;
+            }
         }
     </style>
 </head>
